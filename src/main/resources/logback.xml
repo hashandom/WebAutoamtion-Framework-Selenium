@@ -1,0 +1,46 @@
+<configuration>
+    <!-- Appender for CreateAccountTest log file -->
+    <appender name="CREATE_ACCOUNT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/CreateAccountTest.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/CreateAccountTest.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory> <!-- Keep logs for 30 days -->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender for UserSignInTest log file -->
+    <appender name="USER_SIGNIN_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/UserSignInTest.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/UserSignInTest.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory> <!-- Keep logs for 30 days -->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Console output for quick debugging (optional) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger: logs to CONSOLE only -->
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- Specific loggers for each test class -->
+    <logger name="CreateAccountTest" level="info" additivity="false">
+        <appender-ref ref="CREATE_ACCOUNT_FILE"/>
+    </logger>
+
+    <logger name="UserSignInTest" level="info" additivity="false">
+        <appender-ref ref="USER_SIGNIN_FILE"/>
+    </logger>
+</configuration>

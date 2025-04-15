@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SLIIT AUTOMATION PROJECT">
+
+<!--    &lt;!&ndash; smoke Test Group &ndash;&gt;-->
+<!--    <test name="smoke Tests">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; login-functionality-regression Test Group &ndash;&gt;-->
+<!--    <test name="login-functionality-regression Tests">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="login-functionality-regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; inventory-functionality-regression Test Group &ndash;&gt;-->
+<!--    <test name="inventory-functionality-regression">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="inventory-functionality-regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.InventoryPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; cart-functionality-regression Test Group &ndash;&gt;-->
+<!--    <test name="cart-functionality-regression">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="cart-functionality-regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.CartPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; checkOut-functionality-regression Test Group &ndash;&gt;-->
+<!--    <test name="checkOut-functionality-regression">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="checkOut-functionality-regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.CheckOutPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    &lt;!&ndash; checkOutOverview-functionality-regression Test Group &ndash;&gt;-->
+<!--    <test name="Checkout Overview Tests">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="checkOutOverview-functionality-regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="tests.CheckOutOverviewPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+</suite>
